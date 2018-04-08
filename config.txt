@@ -1,0 +1,6 @@
+temp_dir: /mnt/data/Polybox/Master_Thesis/Code/Library/files/temp/
+output_dir: /mnt/data/Polybox/Master_Thesis/Code/Library/files/output/
+log_dir: /mnt/data/Polybox/Master_Thesis/Code/Library/files/log/
+save_files: No
+delete_output_history: Yes
+log4j_config: /mnt/data/Polybox/Master_Thesis/Code/MATSim/MATSim/log4j.xml

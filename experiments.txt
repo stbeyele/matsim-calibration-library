@@ -1,0 +1,39 @@
+experiment1:
+ Mode: Data_Generatio
+ Batch_Size: 2
+ Population_Fraction: 0.01 
+ Iterations: 2
+ Seed: 0
+ Parameters: [Car_Constant, Walk_Constant, PT_Constant]
+ Modes: [Car, Walk, PT]
+ Car_Constant: [-0.75, 0.0, 2]  # -0.562
+ Walk_Constant: [-0.75, 0.0, 2]
+ PT_Constant: [-0.75, 0.0, 2]  #-0.124
+ RAM_Amount: 4096
+ Target_Mode: [Mode_Share, Travel_Times, Run_Times]
+ Sample_Mode: LHS
+ LHS_Mode: None
+ Population_Mode: Random
+ Sample_Number: 5
+ Target_Mode: Travel_Times
+experiment1:
+ Mode: Analyze_Output
+ Target_Mode: Mode_Share
+ Directory: /mnt/data/Polybox/Master_Thesis/Code/Library/files/log/output_files/fidelities_20180316-230701
+experiment1:
+ Mode: Model_Optimization
+ Input_Data: /mnt/data/Polybox/Master_Thesis/Experiments/Fidelities/Experiment_8_Travel_Times/1.0_400/125_Grid/fidelities_20171231-173544_Mode_Share.csv
+ Kernels: [RBF, Matern12]
+ Kernel_Transform: No
+ BO_Mode: GP-BUCB
+ Error_Mode: L2
+ Distribution_Target: [0.37666074360006124, 0.42329510047253965, 0.2000441559273991]
+ Target_Mode: Mode_Share
+ Parameters: [Car_Constant, Walk_Constant, PT_Constant]
+ Modes: [Car, Walk, PT]
+ Mean_Functions: [Zero]
+ Variance: 1.0
+ ARD: Yes
+ Sampler_Prior_Mean: 0.0
+ Sampler_Prior_Variance: 10
+ LH_Variance: 0.1

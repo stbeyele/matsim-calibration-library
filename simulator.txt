@@ -1,0 +1,10 @@
+Simulator: MATSim
+matsim_dir: /mnt/data/Polybox/Master_Thesis/Code/MATSim/MATSim/matsim-zurich/matsim_zurich.jar
+scenario_dir: /mnt/data/Polybox/Master_Thesis/Code/MATSim/MATSim/Scenarios/Siouxfalls/
+config_name: config_default.xml
+network_name: Siouxfalls_network_PT.xml
+population_name: Siouxfalls_population.xml.gz
+facilities_name: Siouxfalls_facilities.xml.gz
+transitschedule_name: Siouxfalls_transitSchedule.xml
+vehicles_name: Siouxfalls_vehicles.xml
+main_class: org.matsim.run.Controler
